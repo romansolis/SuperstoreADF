@@ -1,0 +1,30 @@
+{
+	"name": "Return",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Returns",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "P1-SuperStoreUS-2015.xls",
+				"container": "superstoreadf"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Order ID",
+				"type": "String"
+			},
+			{
+				"name": "Status",
+				"type": "String"
+			}
+		]
+	}
+}
